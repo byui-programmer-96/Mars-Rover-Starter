@@ -5,5 +5,5 @@ const Command = require('../command.js');
 //       However, do NOT edit the grading tests for any reason and make sure to un-comment out your code to get the autograder to pass.
 
 describe("Message class", function() {
-
+    
 });

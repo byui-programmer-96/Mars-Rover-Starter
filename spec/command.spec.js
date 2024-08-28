@@ -10,3 +10,24 @@ describe("Command class", function() {
   });
 
 });
+
+describe('Command', () => {
+// This test checks if the constructor correctly sets the command type:It creates a Command with a type 'TEST_COMMAND' 
+// It expects the commandType property of the created command to match 'TEST_COMMAND'
+
+  test('constructor sets command type', () => {
+    const commandType = 'TEST_COMMAND';
+    const command = new Command(commandType);
+    expect(command.commandType).toBe(commandType);
+  });
+});
+//This test checks if the constructor correctly sets a second argument as a value:It creates a Command with type 'TEST_COMMAND' and a sample value { key: 'someValue' }
+//It expects the value property of the created command to match the sample value
+
+test('constructor sets a value passed in as the 2nd argument', () => {
+  const commandType = 'TEST_COMMAND';
+  const sampleValue = { key: 'someValue' };
+  const command = new Command(commandType, sampleValue);
+  expect(command.value).toBe(sampleValue);
+});
+
